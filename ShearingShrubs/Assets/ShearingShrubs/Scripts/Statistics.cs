@@ -24,6 +24,7 @@ public class Statistics : MonoBehaviour
         numberofbushes--;
         numberofbushes_UI.text = numberofbushes.ToString() + "/28";
         numberofbushes_anim.Play("UpdateNumber_anim", -1, 0);
+
         if (numberofbushes == 0)
         {
             EndGame.Instance.ShowEndGameScreen();

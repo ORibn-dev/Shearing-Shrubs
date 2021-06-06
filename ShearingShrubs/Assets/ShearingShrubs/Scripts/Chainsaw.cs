@@ -9,10 +9,7 @@ public class Chainsaw : MonoBehaviour
         if (col.CompareTag("Bush"))
         {
             CutBush(col);
-            if (Updatenumberofbushes != null)
-            {
-                Updatenumberofbushes();
-            }
+            Updatenumberofbushes?.Invoke();
         }
     }
 
